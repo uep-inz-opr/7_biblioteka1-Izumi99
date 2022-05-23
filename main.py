@@ -19,6 +19,7 @@ class Biblioteka:
 
                 if Biblioteka.ksiazki[j][2] != tytul and j+1 == len(Biblioteka.ksiazki):
                     Biblioteka.ksiazki.append([tytul, autor, 1])
+                    break
 
                 j = j + 1
 
