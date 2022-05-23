@@ -7,7 +7,7 @@ class Biblioteka:
     ksiazki = []
 
     def __repr__(self):
-        return f"('{self.tytul}, '{self.autor}', {self.ilosc_ksiazek})"
+        return f"('{self.tytul}', '{self.autor}', {self.ilosc_ksiazek})"
 
     def sprawdz_egzemplarz(tytul, autor):
         if Biblioteka.ksiazki != []:
@@ -35,7 +35,7 @@ class Egzemplarz():
         Biblioteka.sprawdz_egzemplarz(self.tytul, self.autor)
 
     def __repr__(self):
-        return f"('{self.tytul}, '{self.autor}', {self.rok})"
+        return f"('{self.tytul}', '{self.autor}', {self.rok})"
 
 i = input()
 for ksiazka in range(int(i)):
